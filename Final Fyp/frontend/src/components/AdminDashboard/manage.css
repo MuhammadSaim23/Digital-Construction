@@ -1,0 +1,196 @@
+/* Table header and heading styles */
+.order-table1 h1,
+#head {
+  text-decoration: none;
+  position: relative;
+  font-size: 40px;
+  color: white;
+  margin-top: 20px;
+}
+
+.order-table1 h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out; /* Add transition animation to the underline */
+}
+
+.order-table1 h1:hover::after {
+  width: 0; /* Animate the underline width to create a disappearing effect */
+}
+
+.order-table1 th {
+  background-color: grey;
+  color: white;
+  border: 1px solid white;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out; /* Add transition animation to the background color */
+}
+
+.order-table1 th:hover {
+  background-color: #333; /* Animate the background color on hover */
+}
+
+/* Table cell styles */
+.order-table1 td {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  font-weight: bold;
+}
+
+/* Table styles */
+.table {
+  box-shadow: 0 0 10px black;
+  border-collapse: collapse;
+  transition: box-shadow 0.3s ease-in-out; /* Add transition animation to the box shadow */
+  margin-bottom: 20px;
+  overflow: auto; /* Add overflow property for scrollable content */
+}
+
+.table:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Animate the box shadow on hover */
+}
+
+/* Diagonal lines in table cells */
+.order-table1 td::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-45deg);
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+/* Delete button styles */
+.delicon {
+  font-size: 30px;
+  color: rgb(210, 83, 83);
+  cursor: pointer;
+  transition: color 0.3s ease-in-out; /* Add transition animation to the icon color */
+}
+
+.delicon:hover {
+  color: red; /* Animate the icon color on hover */
+}
+
+.delbtn {
+  background-color: transparent;
+  border: none;
+}
+
+/* Edit button styles */
+.editicon {
+  font-size: 30px;
+  color: rgb(142, 188, 72);
+  cursor: pointer;
+  transition: color 0.3s ease-in-out; /* Add transition animation to the icon color */
+}
+
+.editicon:hover {
+  color: greenyellow; /* Animate the icon color on hover */
+}
+
+.editbtn {
+  background-color: transparent;
+  border: none;
+}
+
+/* Delete and Edit column headers styles */
+#del {
+  color: red;
+}
+
+#edit {
+  color: greenyellow;
+}
+
+/* Action column header styles */
+#action {
+  color: #f79b4f;
+}
+
+/* Accept button styles */
+.accepticon {
+  font-size: 60px;
+  color: rgb(142, 188, 72);
+  cursor: pointer;
+  transition: color 0.3s ease-in-out; /* Add transition animation to the icon color */
+}
+
+.accepticon:hover {
+  color: greenyellow; /* Animate the icon color on hover */
+}
+
+.acceptbtn {
+  background-color: transparent;
+  border: none;
+  margin-left: 4px;
+}
+
+/* Reject button styles */
+.rejecticon {
+  font-size: 40px;
+  color: rgb(180, 79, 79);
+  cursor: pointer;
+  transition: color 0.3s ease-in-out; /* Add transition animation to the icon color */
+}
+
+.rejecticon:hover {
+  color: red; /* Animate the icon color on hover */
+}
+
+.rejectbtn {
+  background-color: transparent;
+  border: none;
+  margin-left: 4px;
+}
+
+@media only screen and (max-width: 767px) {
+  .order-table1 {
+    overflow-x: auto;
+  }
+  
+  .table {
+    width: 100%;
+  }
+  
+  .order-table1 th,
+  .order-table1 td {
+    white-space: nowrap;
+  }
+  
+  .order-table1 td::before {
+    display: none;
+  }
+  
+  .order-table1 th:nth-child(1),
+  .order-table1 td:nth-child(1) {
+    min-width: 150px;
+  }
+  
+  .order-table1 th:nth-child(2),
+  .order-table1 td:nth-child(2) {
+    min-width: 150px;
+  }
+  
+  /* Repeat the above block for each column, adjusting the nth-child value and min-width as needed */
+}
+
+/* Styles for the aside element */
+aside {
+  display: block;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.center #head{
+  color: black;
+}

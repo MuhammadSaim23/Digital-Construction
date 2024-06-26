@@ -1,0 +1,43 @@
+  .order-table table {
+    border-collapse: separate;
+    border-spacing: 0 5px;
+    background: rgb(104, 162, 220);
+    width: 50%;
+    align-items: center;
+  }
+
+  #topp{
+    color: #fff;
+  }
+
+  .order-table th {
+    background-color: #022030;
+    color: white;
+  }
+
+  .order-table th,
+  td {
+    width: 100px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  .order-table .button-table {
+    width: 80px;
+    background-color: black;
+    border: none;
+    outline: none;
+    height: 30px;
+    border-radius: 49px;
+    color: #fff;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .button-table:hover{
+    background-color: #F79B4F ;
+    color: black;
+  }

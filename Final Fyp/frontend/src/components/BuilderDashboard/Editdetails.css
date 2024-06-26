@@ -1,0 +1,58 @@
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .center h1 {
+    text-decoration: none;
+    position: relative;
+    font-size: 40px;
+    color: black;
+    margin-bottom: 20px; /* Add some space below the heading */
+  }
+  
+  .center h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+  
+  .center form {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Update the box shadow to be less intense */
+  }
+  
+  .center label {
+    font-size: 16px;
+    font-weight: bold; /* Use 'bold' instead of 'bolder' */
+    margin-bottom: 10px; /* Decrease the margin bottom for labels */
+    color: #333; /* Use a slightly darker color for labels */
+    display: block; /* Make labels display as blocks for proper spacing */
+  }
+  
+  .line,
+  .details {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Add some space between the input fields */
+  .line {
+    margin-bottom: 15px;
+  }
+  

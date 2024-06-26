@@ -1,0 +1,23 @@
+table {
+  border: 1px solid #000000;
+  
+}
+
+tr,
+th,
+td {
+  border: 1px solid black;
+}
+
+.center {
+  text-align: center;
+
+}
+
+
+.submitbutton {
+  background-color: black;
+  color: white;
+  border-radius: 40px;
+  margin-left: 5px;
+}

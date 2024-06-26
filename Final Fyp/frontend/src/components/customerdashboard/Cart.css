@@ -1,0 +1,131 @@
+.order-table1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-table1 h1 {
+  text-align: center;
+}
+
+.table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  background-color: rgb(158, 173, 185);
+}
+
+.table th {
+  background-color: black;
+}
+
+.order-table1  .submitbutton {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.submitbutton:hover {
+  background-color: #F79B4F;
+  color: black;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+form-containery .form-label {
+  margin-top: 10px;
+}
+
+form-containery .form-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form-containery .form-radio {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+form-containery .form-radio label {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .table {
+    font-size: 14px;
+  }
+
+  .form-input {
+    width: 100%;
+  }
+}
+
+.form-containery {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: black;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(210, 202, 155, 0.156);
+}
+
+.form-containery .form-label {
+  margin-top: 10px;
+  color: white;
+  font-weight: 600;
+  text-align: left;
+}
+
+.form-containery .form-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-containery .form-radio {
+  align-items: center;
+  margin-top: 5px;
+  color: white;
+}
+
+.form-radio input[type="radio"] {
+  margin-top: 8px;
+  height: 16px;
+  width: 16px;
+}
+
+.form-radio label {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    padding: 10px;
+  }
+}

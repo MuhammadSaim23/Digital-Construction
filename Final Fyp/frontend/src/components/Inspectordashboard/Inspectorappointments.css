@@ -1,0 +1,34 @@
+table {
+  border: 1px solid #000000;
+  text-align: center;
+}
+
+tr,
+th,
+td {
+  border: 1px solid black;
+}
+
+
+.button {
+  width: 150px;
+  background-color: #F79B4F;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+
+}
+
+.submitbutton {
+  background-color: #ec922b;
+  color: black;
+  border-radius: 40px;
+  margin-left: 5px;
+}
