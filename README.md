@@ -160,13 +160,96 @@ Each role has its own dashboard and permissions.
 
 ---
 
+## 🧱 Tech Stack
+
+### Frontend
+- **React.js**
+- Component-based architecture
+- Responsive UI (Desktop, Tablet, Mobile)
+- API-based data handling
+
+### Backend
+- **Laravel (PHP)**
+- RESTful APIs
+- Business logic and role management
+- Secure server-side validation
+
+### Authentication & Security
+- **JWT (JSON Web Tokens)**
+- Token-based authentication
+- Role-based access control
+- Secure API authorization using tokens
+
+### Database
+- **MySQL**
+
+
+---
+
+## 🔗 APIs
+
+- Frontend and backend communicate using **REST APIs**
+- All protected routes require **JWT tokens**
+- APIs handle:
+  - User authentication
+  - Project management
+  - Builder appointments
+  - Material orders
+  - Inspector approvals
+  - Admin verification workflows
+
+---
+
+
+## 🔐 Authentication Flow
+
+1. User registers or logs in
+2. Backend generates a **JWT token**
+3. Token is stored on the client side
+4. Token is sent with every API request
+5. Backend verifies token before granting access
+
+---
+
+## 🏛️ System Architecture
+
+- React frontend consumes Laravel APIs
+- Token-based authorization
+- Modular and scalable design
+- Secure communication between client and server
+
+---
+
+## 📦 Deployment
+
+1. Clone the repository
+2. Configure `.env` file
+3. Setup MySQL database
+4. Install dependencies  
+   - Frontend: `npm install`  
+   - Backend: `composer install`
+5. Run migrations
+6. Start backend and frontend servers
+
+---
+
+## 📌 Project Status
+
+✅ Frontend completed in React  
+✅ Backend completed in Laravel  
+✅ JWT authentication implemented  
+✅ APIs fully integrated  
+
+---
+
+
 ## 👨‍💻 Team
 
 **Project Name:** Digital Construction  
 **Supervisor:** Muhammad Bilal Khan  
 **Developers:**  
 - Muhammad Saim  
-- Humza Naeem  
+- Malik Sikander
 
 **University:** University of Central Punjab  
 **Department:** Faculty of Information Technology  
